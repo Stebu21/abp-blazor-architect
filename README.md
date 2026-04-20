@@ -29,6 +29,7 @@ if not exist "%USERPROFILE%\.claude\agents" mkdir "%USERPROFILE%\.claude\agents"
 
 REM Download the agent using PowerShell (one-liner)
 powershell -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/Stebu21/abp-blazor-architect/main/AGENT.md' -OutFile '%USERPROFILE%\.claude\agents\abp-blazor-architect.md'" && echo Agent installed!
+```
 
 ### Linux / macOS (Bash)
 
@@ -54,6 +55,29 @@ use the abp-blazor-architect agent to...
 ```
 
 Then describe your ABP.IO architecture question or task.
+
+## Uninstallation
+
+### Windows (PowerShell)
+
+```powershell
+Remove-Item -Force "$env:USERPROFILE\.claude\agents\abp-blazor-architect.md"
+Write-Host "Agent abp-blazor-architect uninstalled!"
+```
+
+### Windows (Command Prompt)
+
+```cmd
+del "%USERPROFILE%\.claude\agents\abp-blazor-architect.md"
+echo Agent abp-blazor-architect uninstalled!
+```
+
+### Linux / macOS (Bash)
+
+```bash
+rm ~/.claude/agents/abp-blazor-architect.md
+echo "Agent abp-blazor-architect uninstalled!"
+```
 
 ## Requirements
 
