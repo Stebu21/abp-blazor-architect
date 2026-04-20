@@ -46,6 +46,12 @@ curl -o ~/.claude/agents/abp-blazor-architect.md \
 echo "Agent abp-blazor-architect installed!"
 ```
 
+### PowerShell One-Liner (Windows)
+
+```powershell
+irm raw.githubusercontent.com/Stebu21/abp-blazor-architect/main/install.ps1 | iex
+```
+
 ## Usage
 
 Inside Claude Code, simply use:
@@ -77,6 +83,12 @@ echo Agent abp-blazor-architect uninstalled!
 ```bash
 rm ~/.claude/agents/abp-blazor-architect.md
 echo "Agent abp-blazor-architect uninstalled!"
+```
+
+### PowerShell One-Liner (Windows)
+
+```powershell
+irm raw.githubusercontent.com/Stebu21/abp-blazor-architect/main/uninstall.ps1 | iex
 ```
 
 ## Requirements
