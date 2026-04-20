@@ -27,11 +27,8 @@ Write-Host "Agent abp-blazor-architect installed!"
 REM Create the agents directory
 if not exist "%USERPROFILE%\.claude\agents" mkdir "%USERPROFILE%\.claude\agents"
 
-REM Download the agent using PowerShell
-powershell -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/Stebu21/abp-blazor-architect/main/AGENT.md' -OutFile '%USERPROFILE%\.claude\agents\abp-blazor-architect.md'"
-
-echo Agent abp-blazor-architect installed!
-```
+REM Download the agent using PowerShell (one-liner)
+powershell -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/Stebu21/abp-blazor-architect/main/AGENT.md' -OutFile '%USERPROFILE%\.claude\agents\abp-blazor-architect.md'" && echo Agent installed!
 
 ### Linux / macOS (Bash)
 
